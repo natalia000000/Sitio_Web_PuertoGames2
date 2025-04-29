@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="css/contacto.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1 style="color:#1691e4;">Contacto</h1>
+            <ul class="nav-links">
+                <li><a href="https://github.com/natalia000000/Sitio_Web_PuertoGames/blob/master/Sitio_Web_PuertoGames/Sitio_Web_PuertoGames/index.html">Inicio</a></li>
+                <li><a href="https://github.com/natalia000000/Sitio_Web_PuertoGames/blob/master/Sitio_Web_PuertoGames/Sitio_Web_PuertoGames/producto.html">Productos</a></li>
+                <li><a href="https://github.com/natalia000000/Sitio_Web_PuertoGames/blob/master/Sitio_Web_PuertoGames/Sitio_Web_PuertoGames/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Formulario de contacto -->
+    <div class="formulario-caja">
+        <!-- Nombre -->
+        <div>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" required>
+        </div>
+
+        <!-- Correo -->
+        <div>
+            <label for="correo">Correo:</label>
+            <input type="email" id="correo" required>
+        </div>
+
+        <!-- Mensaje -->
+        <div>
+            <label for="mensajeTexto">Mensaje:</label>
+            <textarea id="mensajeTexto" placeholder="Escribe tu mensaje aquí..."></textarea>
+        </div>
+
+        <!-- Botón de Enviar -->
+        <button onclick="mostrarMensaje()">Enviar</button>
+
+        <!-- Mensaje de confirmación -->
+        <div class="mensaje" id="mensaje">
+            ¡Gracias por enviar tu mensaje!
+        </div>
+    </div>
+
+    <script>
+        function mostrarMensaje() {
+            const nombre = document.getElementById('nombre').value;
+            const correo = document.getElementById('correo').value;
+            const mensajeTexto = document.getElementById('mensajeTexto').value;
+
+            if (nombre && correo && mensajeTexto) {
+                document.getElementById('mensaje').style.display = 'block';
+            } else {
+                alert('Por favor, completa todos los campos.');
+            }
+        }
+    </script>
+</body>
+</html>

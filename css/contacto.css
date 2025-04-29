@@ -1,0 +1,103 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo del body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(31, 133, 36);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+}
+
+/* Encabezado*/
+header {
+    width: 100%;
+    background-color: #05c9fa;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+header h1 {
+    text-align: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 10px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #1691e4;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* Caja del formulario de envio */
+.formulario-caja {
+    background-color: #04b14c;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    max-width: 500px;
+    width: 100%;
+}
+
+/* Estilos de etiquetas y entradas */
+.formulario-caja label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.formulario-caja input,
+.formulario-caja textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Botón de enviar */
+.formulario-caja button {
+    width: 100%;
+    padding: 12px;
+    background-color: #1691e4;
+    color: white;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.formulario-caja button:hover {
+    background-color: #1174b3;
+}
+
+/* Mensaje de confirmación */
+.mensaje {
+    display: none;
+    color: green;
+    background-color: #d4edda;
+    border: 1px solid green;
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 5px;
+    text-align: center;
+}
